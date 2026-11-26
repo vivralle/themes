@@ -1,0 +1,48 @@
+{
+    "layer": "top",
+    "position": "top",
+
+    "height": 40,
+
+    "modules-left": [
+	      "custom/panel",
+        "hyprland/workspaces",
+        "custom/spacer",
+        "group/media"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "group/resources",
+        "pulseaudio",
+        "tray",
+        "battery",
+        "custom/notifications"
+    ],
+
+    "include": [
+        "~/.config/waybar/modules/pulseaudio.jsonc",
+        "~/.config/waybar/modules/clock.jsonc",
+        "~/.config/waybar/modules/workspaces.jsonc",
+        "~/.config/waybar/modules/groups/resources.jsonc",
+        "~/.config/waybar/modules/groups/media.jsonc"
+    ],
+
+
+  "custom/notifications": {
+    "format": "〇",
+    "on-click": "swaync-client -cp || swaync-client -op",
+    "tooltip": false
+  },
+
+  "custom/panel": {
+    "format": "〇",
+    "on-click": "eww close controlbox || eww open controlbox",
+    "tooltip": false
+  },
+  "tray": {
+    "spacing": 10,
+    "tooltip": false
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "layer": "bot",
+  "spacing": 0,
+  "height": 0,
+  "margin-bottom": 0,
+  "margin-top": 15,
+  "position": "top",
+  "margin-right": 0,
+  "margin-left": 0,
+  "modules-left": [
+"sway/workspaces",
+"ext/workspaces",
+"custom/media"
+],
+
+"ext/workspaces": {
+"format": "{name}",
+"all-outputs": false
+},
+  "modules-center": [
+    "custom/notifications"
+  ],
+  "modules-right": [
+    "network",
+    "battery",
+    "cpu",
+    "memory",
+    "pulseaudio",
+    "tray",
+    "clock"
+  ],
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false,
+    "tooltip": false
+  },
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false,
+    "tooltip": false
+  },
+  "custom/media": {
+    "format": "󰝚 {}",
+    "return-type": "text",
+    "max-length": 50,
+    "interval": 2,
+    "exec": "playerctl metadata --format '{{artist}} - {{title}}' 2>/dev/null || echo ''",
+    "on-click": "playerctl play-pause",
+    "escape": true
+  },
+  "custom/notifications": {
+    "format": "〇",
+    "on-click": "pgrep swaync-client -t >/dev/null 2>&1 && killall swaync-client -t || swaync-client -t",
+    "tooltip": false
+  },
+  "tray": {
+    "spacing": 10,
+    "tooltip": false
+  },
+  "clock": {
+    "format": "󰅐 {:%I:%M %p}",
+    "tooltip": false
+  },
+  "network": {
+    "format-wifi": " {bandwidthDownBits}",
+    "format-ethernet": " {bandwidthDownBits}",
+    "format-disconnected": "󰤮 No Network",
+    "interval": 5,
+    "tooltip": false
+  },
+  "pulseaudio": {
+    "scroll-step": 1,
+    "max-volume": 150,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-icons": [
+      "",
+      "",
+      " "
+    ],
+    "nospacing": 1,
+    "format-muted": " ",
+    "on-click": "pavucontrol",
+    "tooltip": false
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄{capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-full": "󱈑 {capacity}%",
+    "format-icons": [
+      "󱊡",
+      "󱊢",
+      "󱊣"
+    ]
+  },
+    "cpu": {
+    "format": " {usage}%",
+    "tooltip": true,
+    "interval": 1
+  },
+  "memory": {
+    "format": " {used:0.1f}Gi"
+  }
+}
