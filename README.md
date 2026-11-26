@@ -32,7 +32,7 @@ THOUGH IT CHECKS IF YOU HAVE REAL FILES AND STOPS, FOR THE LOVE OF GOD,
 
 **BACK UP YOUR CONFIGS FIRST BEFORE TRYING IT. CHECK THE CODE BEFORE YOU RUN IT**
 
-(INCLUDING THE EWWW, THE CLI AND EWWW CONTROL PANEL VERSION OF THE SCRIPT[named switch.sh and switch2.sh in the "script" folder respectively, while you are at it, read common.sh and themeswitcher.sh as well since common.sh is the required by all other 3 themeswitcher scripts])
+(INCLUDING THE EWWW, THE CLI AND EWWW CONTROL PANEL VERSION OF THE SCRIPT[named switch.sh and switch2.sh in the "script" folder respectively, while you are at it, read common.sh and theme-switcher.sh as well since common.sh is the required by all other 3 themeswitcher scripts])
 (btw, it deletes the config files of eww, wofi, hyprland, swaync, waybar, kitty, sway, mango... READ THE SCRIPT FIRST BRO)
 
 ## Experimental Items:
