@@ -1,0 +1,215 @@
+(include "/home/viv/.config/themes/script/eww-yuck/eww_vars.yuck")
+
+(defwidget daybox []
+  (box :height "100" :width "100" :halign "center" :valign "center" :class "container"
+    (label :class "label"  :text DAY)
+  )
+)
+
+(defwidget monthbox []
+  (box :height "100" :width "100" :halign "center" :valign "center" :class "container"
+    (label :class "label"  :text MONTH)
+  )
+)
+
+(defwidget todaybox []
+  (box :height "100" :width "300" :halign "center" :valign "center" :class "container"
+    (label :class "label"  :text TODAY)
+  )
+)
+
+(defwidget yearbox []
+  (box :height "100" :width "100" :halign "center" :valign "center" :class "container"
+    (label :class "label"  :text YEAR)
+  )
+)
+
+(defwidget userinfobox []
+  (centerbox :height "100" :width "340" :halign "center" :valign "center" :class "userinfo-parent"
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "eww close themebox || eww open themebox" :class "button"
+        (label :class "icon-label"  :text "⌘")
+      )
+    )
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "~/.config/themes/script/eww-scripts/Days.sh"  :class "button"
+        (label :class "icon-label"  :text "⌚︎")
+      )
+    )
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "eww open powermenu" :class "button"
+        (label :class "icon-label"  :text "⭘")
+      )
+    )
+  )
+)
+
+(defwidget powermenu []
+  (centerbox :height "100" :width "340" :halign "center" :valign "center" :class "userinfo-parent"
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "systemctl poweroff" :class "button"
+        (label :class "icon-label"  :text "⏻")
+      )
+    )
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "systemctl suspend"  :class "button"
+        (label :class "icon-label"  :text "⏾")
+      )
+    )
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "eww close powermenu" :class "button"
+        (label :class "icon-label"  :text "⨯")
+      )
+    )
+  )
+)
+
+(defwidget themebox []
+  (box :orientation "h" :space-evenly false :halign "center" :valign "center" :class "userinfo-parent"
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "eww close themebox; setsid -f ~/.config/themes/script/switch.sh Autumn" :class "button"
+        (label :class "icon-label"  :text "ꕤ")
+      )
+    )
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "eww close themebox; setsid -f ~/.config/themes/script/switch.sh Rain" :class "button"
+        (label :class "icon-label"  :text "🌢")
+      )
+    )
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "eww close themebox; setsid -f ~/.config/themes/script/switch.sh Clovers" :class "button"
+        (label :class "icon-label"  :text "☘︎")
+     )
+    )
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "eww close themebox; setsid -f ~/.config/themes/script/switch.sh Test" :class "button"
+        (label :class "icon-label"  :text "⚠")
+      )
+    )
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "eww close themebox; setsid -f ~/.config/themes/script/switch.sh Robin" :class "button"
+        (label :class "icon-label"  :text "♪✩")
+      )
+    )
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "eww close themebox; setsid -f ~/.config/themes/script/switch.sh Void" :class "button"
+        (label :class "icon-label"  :text "☾⋆")
+      )
+    )
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "eww close themebox; setsid -f ~/.config/themes/script/switch.sh Skirk" :class "button"
+        (label :class "icon-label"  :text "❅")
+      )
+    )
+    (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+      (button :onclick "eww close themebox; notify-send 'Free cupcakes :D' 'Exited gracefully! If you are reading this, you now owe me a cupcake'" :class "button"
+      (label :class "icon-label" :text "←")
+      )
+    )
+  )
+)
+(defwidget controlbox []
+  (box :width 500 :halign "center" :valign "center" :orientation "v" :space-evenly false :class "image-parent"
+    (box :hexpand true :halign "fill" :valign "fill" :orientation "v" :space-evenly false :class "test"
+      (box :hexpand true :halign "fill" :valign "fill" :orientation "v" :space-evenly false :class "tesstt-parent"
+        (box :vexpand true :valign "fill" :class "fuckit-margin"
+          (label :class "label" :text "󰣇 The Control Panel 󰣇")
+        )
+      )
+    )
+    (box :height 200 :halign "fill" :valign "start" :orientation "h" :space-evenly false :class "tesstt-parent"
+      (box :hexpand true :halign "fill" :valign "fill" :orientation "v" :space-evenly false :class "test"
+        (box :vexpand true :valign "fill" :class "test"
+          (label :class "label" :text "G'day!")
+        )
+        (box :vexpand true :valign "fill" :class "test"
+          (label :class "label" :text TODAY :hexpand true :halign "center")
+        )
+        (box :vexpand true :valign "fill" :class "test"
+          (label :class "label" :text "-Vivralle" :hexpand true :halign "center")
+        )
+        (box :vexpand true :valign "fill" :class "test"
+          (label :class "label-a" :text "Explosive Aro/Ace Leaf :3" :hexpand true :halign "center")
+        )
+      )
+      (box :hexpand true :halign "fill" :valign "fill" :orientation "v" :space-evenly false :class "test"
+        (image :path "/home/viv/.config/themes/images/pfp.png" :image-width 150 :image-height 150 :halign "end" :valign "start" :class "fuckit-margin")
+      )
+    )
+    (box :class "tesstt-parent" :height 200 :vexpand true :orientation "v" :space-evenly false
+    (label :class "cava" :vexpand true :hexpand true :halign "center" :show-truncated false :text cavabars)
+    (label :class "label-a" :text track)
+      (box :class "slider-row" :orientation "h" :halign "center" :space-evenly false :spacing 12
+          (button :onclick "playerctl previous" :class "buttonB"
+            (label :class "label" :text "⏮")
+          )
+          (button :onclick "playerctl play-pause" :class "buttonB"
+            (label :class "label" :text "⏯")
+          )
+          (button :onclick "playerctl next" :class "buttonB"
+            (label :class "label" :text "⏭")
+          )
+      )
+      (box :class "test" :orientation "v" :space-evenly false :spacing 6
+        (box :class "slider-row" :orientation "h" :space-evenly false
+          (label :class "label-b" :text "  󰕾 ")
+          (scale :class "slider" :hexpand true :min 0 :max 100 :value vol :onchange "wpctl set-volume @DEFAULT_AUDIO_SINK@ {}%")
+        )
+        (box :class "slider-row" :orientation "h" :space-evenly false
+          (label :class "label-b" :text "☀︎")
+          (scale :class "slider" :hexpand true :min 0 :max 100 :value bright :onchange "brightnessctl set {}%")
+        )
+      )
+    )
+    (box :orientation "h" :space-evenly false :halign "center" :valign "center" :class "test"
+      (box :height "100" :width "500" :halign "center" :valign "center" :class "tesstt-parent"
+        (button :onclick "eww close controlbox; setsid -f ~/.config/themes/script/switch.sh Autumn" :class "buttonA"
+          (label :class "icon-label"  :text "ꕤ")
+        )
+        (button :onclick "eww close controlbox; setsid -f ~/.config/themes/script/switch.sh Rain" :class "buttonA"
+          (label :class "icon-label"  :text "🌢")
+        )
+        (button :onclick "eww close controlbox; setsid -f ~/.config/themes/script/switch.sh Robin" :class "buttonA"
+          (label :class "icon-label"  :text "♪")
+        )
+        (button :onclick "eww close controlbox; setsid -f ~/.config/themes/script/switch.sh Skirk" :class "buttonA"
+          (label :class "icon-label"  :text "❅")
+        )
+        (button :onclick "eww close controlbox; setsid -f ~/.config/themes/script/switch.sh Void" :class "buttonA"
+          (label :class "icon-label"  :text "☾")
+        )
+        (button :onclick "eww close controlbox; setsid -f ~/.config/themes/script/switch.sh Clovers" :class "buttonA"
+          (label :class "icon-label"  :text "☘︎")
+        )
+        (button :onclick "eww close controlbox; setsid -f ~/.config/themes/script/switch.sh Test" :class "buttonA"
+          (label :class "icon-label"  :text "⚠")
+        )
+      )
+    )
+    (box :orientation "h" :space-evenly false :halign "center" :valign "center" :class "test"
+      (box :height "100" :width "500" :halign "center" :valign "center" :class "tesstt-parent"
+        (button :onclick "systemctl poweroff" :class "buttonA"
+          (label :class "icon-label"  :text "⏻")
+        )
+        (button :onclick "systemctl suspend" :class "buttonA"
+          (label :class "icon-label"  :text "⏾")
+        )
+        (button :onclick "systemctl reboot" :class "buttonA"
+          (label :class "icon-label"  :text "⟲")
+        )
+        (button :onclick "setsid -f ~/.config/themes/script/eww-scripts/lock.sh" :class "buttonA"
+          (label :class "icon-label"  :text "🔒︎")
+        )
+        (button :onclick "setsid -f ~/.config/themes/script/eww-scripts/bluelight.sh" :class "buttonA"
+          (label :class "icon-label"  :text "󰖔")
+        )
+        (button :onclick 'grim -g "$(slurp)"' :class "buttonA"
+          (label :class "icon-label"  :text "⛶")
+        )
+        (button :onclick "swaync-client -t" :class "buttonA"
+          (label :class "icon-label"  :text "🕭")
+        )
+      )
+    )
+  )
+)
