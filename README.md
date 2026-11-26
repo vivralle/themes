@@ -38,6 +38,8 @@ THOUGH IT CHECKS IF YOU HAVE REAL FILES AND STOPS, FOR THE LOVE OF GOD,
 ## Experimental Items:
 the sway and the mangowm configs are currently experimental and kicking my ass, i got the theme switcher to properly detect them, but i am currently fighting the .conf folders, so don't expect to get this on sway and mango right now, but you can expect it can be there soon enough i guess.... or you can just download the folder and replace my broken mango and sway configs with your proper working configs and cross reference the keybinds with my hyprland lua file
 
+## Installation
+im not making an installation script for you, just dump the main folder, "themes" into your .config and inspect it suppose, after the main folder is installed in your Downloads directory, 'cp -r ~/Downloads/themes ~/.config/' after that, you need to inspect the files to see which ones have the absolute path, and replace the "viv" with your user
 
 ## 
 All the artwork and characters which serve as the wallpapers, and the images in /images, belong to their respective original creators
