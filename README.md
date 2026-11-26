@@ -40,7 +40,7 @@ the sway and the mangowm configs are currently experimental and kicking my ass, 
 ## Installation
 im not making an installation script for you, just dump the main folder, "themes" into your .config and inspect it
 suppose, after the main folder is installed in your Downloads directory,
-'cp ~/Downloads/themes ~/.config/'
+'cp -r ~/Downloads/themes ~/.config/'
 after that, you need to inspect the files to see which ones have the absolute path, and replace the "viv" with your user
 
 
