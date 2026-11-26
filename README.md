@@ -1,4 +1,18 @@
-# Information:
+# PREVIEW!
+
+## The Clovers theme:
+<img width="1366" height="768" alt="20261010_23h22m26s_grim" src="https://github.com/user-attachments/assets/e39e112b-3922-4486-b04f-e259843b4223" /> 
+<img width="501" height="713" alt="20261126_17h46m01s_grim" src="https://github.com/user-attachments/assets/67b35871-c299-4fa6-b572-fd03ab1bf57d" />
+(an eww control panel)
+
+## Other themes
+<img width="1366" height="768" alt="20261005_00h20m35s_grim" src="https://github.com/user-attachments/assets/9f5c6484-4231-4e0b-9d26-9f26a731c1b2" />
+<img width="1366" height="768" alt="20261109_16h57m15s_grim" src="https://github.com/user-attachments/assets/ab8e1310-e897-4fa1-b387-088f7d5ab16d" />
+<img width="1366" height="768" alt="20260930_19h59m46s_grim" src="https://github.com/user-attachments/assets/6050f546-6117-4906-846b-c247af0456c3" />
+<img width="1366" height="768" alt="20260930_16h07m17s_grim" src="https://github.com/user-attachments/assets/a4a798ee-2de7-45da-822a-ba96580fb8f5" />
+<img width="1366" height="768" alt="20261117_22h26m37s_grim" src="https://github.com/user-attachments/assets/9e42176f-180d-43d9-b646-f3fe6a91fb0f" />
+
+## Information:
 
 This is a set of MY personally curated dotfiles so you'll probably have to make changes and tinker around with the script as i used a lot of absolute paths in the files of basically everything
 
