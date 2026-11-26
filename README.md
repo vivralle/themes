@@ -29,4 +29,6 @@ suppose, after the main folder is installed in your Downloads directory,
 'cp ~/Downloads/themes ~/.config/'
 after that, you need to inspect the files to see which ones have the absolute path, and replace the "viv" with your user
 
+
+## 
 All the artwork and characters which serve as the wallpapers, and the images in /images, belong to their respective original creators
