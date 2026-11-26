@@ -1,0 +1,11 @@
+(defpoll DAY :interval "1000s" '~/.config/themes/script/eww-scripts/day_format.sh')
+(defpoll MONTH :interval "1000s" '~/.config/themes/script/eww-scripts/month_format.sh')
+(defpoll YEAR :interval "1000s" '~/.config/themes/script/eww-scripts/year_format.sh')
+(defpoll TODAY :interval "1000s" '~/.config/themes/script/eww-scripts/Day.sh')
+(defpoll vol :interval "2s"
+  "wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2*100)}'")
+(defpoll bright :interval "2s"
+  "brightnessctl -m | cut -d, -f4 | tr -d '%'")
+(deflisten track
+  "playerctl --follow metadata --format '{{title}} - {{artist}}' 2>/dev/null")
+(deflisten cavabars "~/.config/themes/script/eww-scripts/cava.sh")
