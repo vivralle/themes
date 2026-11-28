@@ -27,8 +27,7 @@ done
 eww close-all
 
 for item in "${configs[@]}"; do
-    rm -rf "$HOME/.config/$item"
-    ln -s "$theme_dir/$item" "$HOME/.config/$item"
+    ln -sfn "$theme_dir/$item" "$HOME/.config/$item"
 done
 
 eww reload
