@@ -49,7 +49,7 @@ local menu        = "wofi"
 -- end)
 hl.on("hyprland.start", function()
     hl.exec_cmd("waybar")
-    hl.exex_cmd("awww-daemon")
+    hl.exec_cmd("awww-daemon")
     hl.exec_cmd('awww img -t none /home/viv/.config/themes/Rain/e1.png')
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("swaync")
